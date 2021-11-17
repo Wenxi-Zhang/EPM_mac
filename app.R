@@ -1,6 +1,10 @@
-Sys.setenv(RETICULATE_PYTHON = ".epmv/bin/python3")
-#reticulate::use_virtualenv(".epmv", required = TRUE) 
+#Sys.setenv(RETICULATE_PYTHON = ".epmv/bin/python3")
+#Sys.setenv(RETICULATE_PYTHON = "/usr/bin/python3")
+
+
 library(reticulate)
+reticulate::use_python("/usr/bin/python3")
+reticulate::use_virtualenv("/home/wenxiz2210/shiny-server/EPM/.epmv", required = TRUE) 
 library(ggplot2)
 library(DT)
 
